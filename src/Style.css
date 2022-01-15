@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.brand-logo{
+  width: 110px;
+  position: relative;
+  left:3rem
+}
+
+.navbar{
+  width: 100%;
+  height: 70px;
+  box-shadow: 0px 1px 0px silver;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-container{
+  width: 40%;
+  display: flex;
+  position: relative;
+  right: 8rem;
+  left: 2rem;
+}
+
+.search-container .search-input{
+  width: 550px;
+  height: 42px;
+  border:1px solid rgba(0,0,0,0.1);
+  outline: none;
+  padding-left: 10px;
+  font-size: 18px;
+}
+.search-container .search-input:focus{
+  box-shadow: inset 0.5px 0.5px 0.5px darkblue, 0.5px 0.5px 0.5px darkblue;
+}
+
+.search-container .button{
+  width: 70px;
+  outline: none;
+  border: none;
+  height: 42px;
+  position: relative;
+  left: 0.4px;
+}
+
+
+.search-container .button:active{
+box-shadow: 0.6px 0.7px 0px silver;
+}
+
+
+
+ .users_set{
+  display: flex;
+  width: 220px;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 23px;
+}
+ .users_set .avatar{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+ 
+}
+
+.micro{
+  font-size: 24px;
+  position: relative;
+  top:2px;
+  left:1rem;
+  background-color: rgba(0, 0, 0, 0.048);
+  padding: 10px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.micro:active{
+  background: rgba(0,0,0,0.1);
+
+}
+/*2-step */
+
+.toogle-sidebar{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+padding: 8px;
+position: relative;
+left:2rem;
+cursor: pointer;
+}
+
+.toogle-sidebar:active{
+  background: rgba(0, 0, 0, 0.048);
+}
+
+.sidebar{
+  width: 25%;
+  box-shadow: 0.5px 0px 10px rgba(0, 0, 0, 0.048);
+  height:90vh;
+  transition: transform 0.2s ease;
+  overflow-y: scroll;
+  position: relative;
+  background: #ffff;
+  z-index: 555;
+  overflow-x: hidden;
+}
+
+.swipe-sidebar{
+  transform: translateX(-100%);
+}
+
+
+.sidebar .sidebar-list{
+  width: 100%;
+  height: 200vh;
+}
+
+.sidebar::-webkit-scrollbar{
+  width: 10px;
+}
+
+.sidebar::-webkit-scrollbar-track{
+  background: rgba(0, 0, 0, 0.048);
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+  width: 10px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.455);
+  display: none;
+}
+
+.sidebar:hover::-webkit-scrollbar-thumb{
+  width: 10px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.455);
+  display: block;
+}
+
+
+
+.sidebar .sidebar-list ul{
+  width: 112%;
+  position: relative;
+  left: -2rem;
+  overflow-x: hidden;
+}
+.sidebar .sidebar-list ul li{
+  font-size: 20px;
+  width: 100%;
+  padding: 12px 25px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  
+}
+.sidebar .sidebar-list ul li span{
+  position: relative;
+  left: 15px;
+  font-size: 15px;
+}
+.sidebar .sidebar-list ul li:hover{
+  background: rgba(0, 0, 0, 0.048);
+}
+
+.line{
+  width: 100%;
+  display: block;
+  height: 1px;
+  background: rgba(192, 192, 192, 0.534);
+}
+
+.test{
+  border: none;
+}
+
+.test:active{
+  box-shadow: 0px 0px 0px;
+}
+.form-control{
+  border: none;
+}
+
+
+/* player */
+.main-container{
+  background-color:rgb(253, 253, 253);
+  height: 105vh;
+  position: relative;
+  left:-4rem;
+  top:5px;
+}
+
+
+.player-box{
+  width: 860px;
+  min-height: 650px;
+  background: white;
+  position: relative;
+  top:2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.096);
+  padding-bottom: 15px;
+}
+
+.player-box h4,p, span{
+  margin-left: 12px;
+}
+
+.player{
+  position: relative;
+}
+
+.channel-avatar{
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+.userChanel{
+  display: flex;
+  align-items: center;
+  width: 250px;
+  height: 50px;
+  justify-content: flex-start;
+}
+.userChanel p{
+  position: relative;
+  top:10px;
+  left:12px;
+  font-weight: 700;
+}
+/* step 5 */
+
+.main{
+  display: flex;
+}
+
+.video-lists{
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.048);
+  position: relative;
+  top:2rem;
+  left:-2rem;
+}
+
+.video-list{
+  width: 432px;
+  height: 120px;
+  border-radius: 5px;
+  display: flex;
+  padding: 5px 8px;
+}
+
+.video-list:active{
+  background: rgba(0, 0, 0, 0.048);
+}
+
+.video-list img{
+  width: 48%;
+}
+  .video-list h5{
+    margin-left: 8px;
+    font-size: 16px;
+    line-height: 19px;
+ 
+  }
+
+  .video-list p{
+    margin-left: 9px;
+    line-height: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    color: dimgrey;
+  }
+
+  .video-list span{
+    width: 32px;
+    height: 32px;
+    font-size: 21px;
+    border-radius: 50%;
+    padding: 0  10px 0 6px;
+  }
+
+  .video-list span:active{
+    background: rgba(0, 0, 0, 0.048);
+  }
+
+
+
